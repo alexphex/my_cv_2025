@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alex - cv</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* RESET */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #f9f9f9;
+        }
+
+        a {
+            color: #4f46e5;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* CONTAINER */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #111827;
+        }
+
+        header p {
+            font-size: 1rem;
+            color: #6b7280;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 5px;
+            color: #111827;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+        }
+
+        .skill {
+            background: #fff;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .skill:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        }
+
+        .project {
+            background: #fff;
+            padding: 15px 20px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9rem;
+            color: #6b7280;
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            section h2 {
+                font-size: 1.3rem;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>alex</h1>
+            <p>Email: <a href="mailto:alex_webdev@yahoo.com">alex_webdev@yahoo.com</a></p>
+            <p>-> <a href="https://www.linkedin.com/in/alex-v-webdev/" target="_blank">Linkedin</a> | -> <a href="https://www.github.com/alexphex" target="_blank">GitHub</a></p>
+        </header>
+
+        <section>
+            <h2>Profile</h2>
+            <p>Passionate <strong>WordPress / WooCommerce developer</strong> with experience in building and customizing websites and online shops. Experienced in creating projects from scratch using WordPress, Gutenberg, WooCommerce, and integrating custom plugins. Familiar with modern development processes, including Docker, Git, and local development environments. Seeking a position to grow further and apply skills in a commercial environment.</p>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill"><strong>WordPress & WooCommerce:</strong> Theme customization, Child Theme, plugin integration, mini-shop development, update and maintain WordPress websites, Convert HTML Templates into functional WordPress themes;</div>
+                <div class="skill"><strong>PHP:</strong> Actions/ Filters/ Queries/ Loop.</div>
+                <div class="skill"><strong>Front-End:</strong> HTML, CSS, JS, jQuery.</div>
+                <div class="skill"><strong>Development Tools:</strong> Docker, Docker Compose, Git, VS Code.</div>
+                <div class="skill"><strong>Version Control & Collaboration:</strong> Git, GitHub.</div>
+                <div class="skill"><strong>Optional:</strong> Bootstrap, Tailwind, SASS, wp-scripts.</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+
+            <!-- include later when projects will be ready START-->
+            <!-- <div class="project">
+                <strong>Mini WooCommerce Shop</strong>
+                <p>Developed a small WooCommerce shop on 000webhost. Integrated custom plugins for product display and checkout customization. Applied custom CSS and JS for enhanced UI/UX.</p>
+            </div>
+            <div class="project">
+                <strong>Corporate WordPress Example Site</strong>
+                <p>Built a corporate-style WordPress site to demonstrate Gutenberg expertise. Implemented multi-section pages, responsive design, and modular templates.</p>
+            </div> -->
+            <!-- include later when projects will be ready END-->
+
+            <div class="project">
+                <strong>WorPress themes projects</strong>
+                <p>My custom themes</p>
+                <p>-> <a href="https://github.com/alexphex/wp-theme-rent4u.git" target="_blank">wp-theme-rent4u</a> | -> <a href="https://github.com/alexphex/generatepress-child-events.git" target="_blank">generatepress-child-events</a></p>
+            </div>
+            <div class="project">
+                <strong>WordPress plugins projects</strong>
+                <p>A collection of custom WordPress plugins I’ve developed to enhance site functionality and improve user experience.</p>
+                <p>-> <a href="https://github.com/alexphex/plugin_custom_notifications.git" target="_blank">custom_notifications</a> | -> <a href="https://github.com/alexphex/wp_plugin_custom_search_ajax.git" target="_blank">custom_search_ajax</a> | -> <a href="https://github.com/alexphex/plugin-custom-rest-api.git" target="_blank">custom-rest-api</a></p>
+
+            </div>
+            <div class="project">
+                <strong>WooCommerce plugins projects</strong>
+                <p>A showcase of lightweight WooCommerce plugins I’ve developed to extend functionality and improve user experience.</p>
+                <p>-> <a href="https://github.com/alexphex/wp_plugin_woocommerce_manufacturer_field.git" target="_blank">product_custom_field</a> | -> <a href="https://github.com/alexphex/wp-wooCommerce-ajax-filter.git" target="_blank">product_filter_ajax</a></p>
+
+            </div>
+            <div class="project">
+                <strong>Landing Pages & Website Template (HTML + CSS + jQuery)</strong>
+                <p>Explore a selection of my front-end projects built with HTML, CSS, and jQuery. Each piece reflects my focus on design and responsive layouts.</p>
+                <p>-> <a href="https://github.com/alexphex/Restaurant__template.git" target="_blank">Restaurant__template</a> | -> <a href="https://github.com/alexphex/Lawyer__template.git" target="_blank">Lawyer__template</a> | -> <a href="https://github.com/alexphex/Organic__template.git" target="_blank">Organic__template</a> | -> <a href="https://github.com/alexphex/leasing_car.git" target="_blank">Leasing_car</a> | -> <a href="https://github.com/alexphex/tea_project.git" target="_blank">Tea_project</a></p>
+
+            </div>
+                <div class="project">
+                <strong>Local wp dev</strong>
+                <p>Lightweight local development environment for WordPress using Docker, MariaDB, and Adminer.</p>
+                <p>-> <a href="https://github.com/alexphex/WP-Dev-with-Docker.git" target="_blank">WP-Dev-with-Docker</a></p>
+            </div>
+
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <p>Self-taught WordPress & WooCommerce Developer through practical projects and tutorials. Continuous learning in PHP, front-end technologies, and WordPress architecture. Diploma in Economics / Udemy courses - PHP & WordPress.</p>
+        </section>
+
+        <section>
+            <h2>Languages</h2>
+            <ul>
+                <li>English — Professional working proficiency</li>
+                <li>Roumanian — Native</li>
+                <li>French - Fluently</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Additional Information</h2>
+            <ul>
+                <li>Problem-solving skills and willingness to learn.</li>
+                <li>Able to produce clean, maintainable code and work independently.</li>
+            </ul>
+        </section>
+
+        <footer>
+            alex wp-dev 2025.
+        </footer>
+    </div>
+</body>
+</html>
